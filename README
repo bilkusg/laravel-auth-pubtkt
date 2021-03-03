@@ -1,0 +1,19 @@
+All files copyright(C) Gary M Bilkus 2021
+
+Released into the public domain - feel free to use as you wish
+
+
+This repo contains a set of files which can be added to a laravel installation to use a mod_auth_pubtkt compatible
+scheme for authentication. In addition to setting the pubtkt needed by apache, it also sets another ticket
+which contains the full details of the logged in user.
+
+This allows other SSO applications to access the full details of the end user without having access to the database
+
+Please note that these files need to be installed on top of breeze with inertia. If you use breeze without inertia, you
+will need to mess with the views. But the views here won't be what you want anyway.
+
+You are also likely to want to customise the web routes and probably the user object to add in things you need.
+
+But this should at least get things wired up to show you how to create your own guard and ServiceProvider
+
+ 
